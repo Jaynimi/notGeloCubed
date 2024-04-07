@@ -1,18 +1,12 @@
 import React from "react";
-import Blog from "./Blog";
-import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Home() {
-  const navigate = useNavigate();
-  const Blog = () => {
-    navigate("/blog");
-    console.log("errrr");
-  };
-
   return (
     <div>
-      <p>Home!</p>
-      <button onClick={Blog}>Blog</button>
+      <Navbar />
+      <Footer />
     </div>
   );
 }
